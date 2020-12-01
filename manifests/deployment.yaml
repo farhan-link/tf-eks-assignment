@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pass-generator-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pass-generator-app
+  template:
+    metadata:
+      labels:
+        app: pass-generator-app
+    spec:
+      containers:
+      - name: pass-generator-app
+        image: IMAGE_URL
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
