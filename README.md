@@ -1,5 +1,5 @@
 # DevOps Assignment!
-This project is intended to submit my candidature for the position as DevSecOps Engineerr.  To successful run this project you need to setup few things as prerequisites.
+This project is intended to submit my candidature for the position as DevSecOps Engineer.  To successful run this project you need to setup few things as prerequisites.
 
 ### Github Secrets
 - `AWS_ACCESS_KEY_ID`
