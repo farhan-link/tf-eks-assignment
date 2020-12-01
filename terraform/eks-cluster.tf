@@ -2,8 +2,8 @@ module "eks" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = var.cluster_name
   cluster_version = "1.18"
-  subnets         = concat(tolist(module.vpc.private_subnets), tolist(module.vpc.public_subnets))
-
+  subnets         = tolist(module.vpc.public_subnets)
+  
   tags = {
     Environment = "devops-assignment-farhan"
     GithubRepo  = "terraform-aws-eks"
